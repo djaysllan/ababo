@@ -1,4 +1,4 @@
-const help = (.) => {
+const help = (setprefix) => {
 	return `         
 ┏┳┳┅┅┅┅┅┅┅┅┅┅┅┓
 
