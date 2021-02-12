@@ -1,5 +1,5 @@
-const ajuda = (prefix) => {
-	return `         
+const menuadmin = (prefix, pushname) => {
+ return`         
 ┏┳┳┅┅┅┅┅┅┅┅┅┅┅┓
 
       *Ａｙｓｌｌａｎ
