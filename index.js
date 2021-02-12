@@ -53,10 +53,10 @@ const _level = JSON.parse(fs.readFileSync('./database/json/level.json'))
 
 /******BEGIN OF MENU INPUT******/
 const { help } = require('./src/help')
-const { ajuda } = require('./src/ajuda')
 const { logomaker } = require('./database/menu/logomaker')
 const { nabutomenu } = require('./src/nabutomenu')
 const { menuadmin } = require('./src/menuadmin')
+const { ajuda } = require('./src/ajuda')
 const { nsfwmenu } = require('./src/nsfwmenu')
 /*const { mediamenu } = require('./database/menu/mediamenu')
 const { educationmenu } = require('./database/menu/educationmenu')
@@ -367,6 +367,10 @@ case 'timer':
 							case 'menuadmin':
 								client.sendMessage(from, menuadmin(prefix, sender), text, {quoted: mek})
 										break
+							case 'ajuda':
+								client.sendMessage(from, ajuda(prefix, sender), text, {quoted: mek})
+										break
+								
 										case 'nsfwmenu':
 											client.sendMessage(from, nsfwmenu(prefix, sender), text, {quoted: mek})
 													break
