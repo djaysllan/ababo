@@ -1,4 +1,4 @@
-const menuadmin = (prefix, pushname) => {
+const ajuda = (prefix, pushname) => {
  return`         
 ┏┳┳┅┅┅┅┅┅┅┅┅┅┅┓
 
