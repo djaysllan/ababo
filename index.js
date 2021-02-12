@@ -1153,6 +1153,13 @@ case 'timer':
                hasil = `CASO : *${body.slice(1)}*\n\nVOCÊ É : *${random}%* CORNO(A)😳`
               reply(hasil)
                 break
+               case '%adm':
+              client.updatePresence(from, Presence.composing) 
+              if (!isUser) return reply(mess.only.daftarB)
+                random = `${Math.floor(Math.random() * 100)}`
+               hasil = `CASO : *${body.slice(1)}*\n\nVOCÊ TEM : *${random}%* DE SER ADM`
+              reply(hasil)
+                break
                case '%gado':
               client.updatePresence(from, Presence.composing) 
               if (!isUser) return reply(mess.only.daftarB)
